@@ -1,3 +1,51 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+Extra Bold: 800
+
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+#636c79
+#8bb7a2
+rgba(255, 255, 255, 0.137)
+#10181d
+#fff
+#000
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
 * {
@@ -17,8 +65,10 @@ body {
 
 header {
 	background-color: #636c79;
-	padding: 0 5rem;
-	height: 100vh;
+	padding: 0 4.8rem;
+	padding-bottom: 4.8rem;
+
+	margin-bottom: 12rem;
 }
 
 /* ######### Navigation Bar Starts ######### */
@@ -27,13 +77,13 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	gap: 3.2rem;
 	padding-top: 2rem;
 }
 
 /* ####### Navigation items Starts ####### */
 
 .nav-item {
-	padding-right: 2rem;
 	font-size: 2rem;
 	color: #fff;
 }
@@ -46,6 +96,12 @@ nav {
 	border: 0.1rem solid #fff;
 	text-align: center;
 	margin-left: 8rem;
+	transition: all 0.3s;
+}
+
+.nav-item-active:hover {
+	background-color: #fff;
+	color: #636c79;
 }
 
 /* ######## LOGO ######## */
@@ -61,15 +117,24 @@ nav {
 	display: flex;
 	justify-content: space-between;
 
-	max-width: 120rem;
+	max-width: 130rem;
 	width: 90%;
 	margin: 4rem auto;
+}
+
+.img-1 {
+	overflow: hidden;
 }
 
 .img-1 img {
 	height: 53rem;
 	width: 47rem;
 	object-fit: cover;
+	transition: all 0.3s;
+}
+
+.img-1 img:hover {
+	transform: scale(1.1);
 }
 
 .text-1 {
@@ -86,6 +151,7 @@ nav {
 .text-1 p {
 	color: #fff;
 	font-size: 2.5rem;
+	line-height: 1.6;
 }
 
 .download-email {
@@ -119,11 +185,20 @@ form {
 	background-color: #8bb7a2;
 	border: none;
 	padding: 1rem 4rem;
+	transition: all 0.4s;
+}
+
+.button:hover {
+	font-size: 2rem;
+	color: #8bb7a2;
+	background-color: #fff;
+	border: none;
+	padding: 1rem 4rem;
 }
 
 /* ####### Main Section ######## */
 main {
-	max-width: 120rem;
+	max-width: 130rem;
 	width: 90%;
 	margin: 6rem auto;
 
@@ -161,12 +236,21 @@ main {
 	margin-top: 1rem;
 }
 
+.img-2 {
+	overflow: hidden;
+}
+
 .img-2 img {
 	height: 61rem;
 	width: 100%;
 
 	object-fit: cover;
 	object-position: top;
+	transition: all 0.4s;
+}
+
+.img-2 img:hover {
+	transform: scale(1.1);
 }
 
 /* ######### Section 3 ######## */
@@ -185,6 +269,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	margin: 5rem 0;
+	gap: 4.8rem;
 }
 
 .part-11 {
@@ -198,12 +283,21 @@ main {
 	align-items: flex-start;
 }
 
+.img-square {
+	overflow: hidden;
+}
+
 .img-square img {
 	height: 57rem;
 	width: 57rem;
 
 	object-fit: cover;
 	object-position: right;
+	transition: all 0.4s;
+}
+
+.img-square img:hover {
+	transform: scale(1.1);
 }
 
 .part-11 .text-bold {
@@ -213,6 +307,8 @@ main {
 
 .text-light {
 	font-size: 2rem;
+	line-height: 1.6;
+	color: #000;
 }
 
 .section-5 {
@@ -241,13 +337,16 @@ main {
 }
 
 .text-lighter {
-	font-size: 2.5rem;
+	font-size: 2.4rem;
+	color: #000;
+	line-height: 1.2;
 }
 
 .section-6 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 4.8rem;
 
 	margin: 3rem 0;
 }
@@ -260,11 +359,20 @@ main {
 	gap: 2rem;
 }
 
+.b-1 {
+	overflow: hidden;
+}
+
 .b-1 img {
 	width: 100%;
 	height: 50rem;
 
 	object-fit: cover;
+	transition: all 0.4s;
+}
+
+.b-1 img:hover {
+	transform: scale(1.1);
 }
 
 .text-33 {
@@ -273,6 +381,11 @@ main {
 
 .text-34 {
 	font-size: 1.6rem;
+	line-height: 1.6;
+}
+
+.text-34 p {
+	color: #000;
 }
 
 .button-111 {
@@ -288,16 +401,18 @@ main {
 	padding: 1rem 4rem;
 }
 
+/* footer  */
+
 footer {
 	background-color: #10181d;
 }
 
 .container {
-	max-width: 120rem;
+	max-width: 130rem;
 	width: 90%;
 	margin: 0 auto;
 
-	height: 65vh;
+	padding-bottom: 8rem;
 
 	display: flex;
 	flex-direction: column;

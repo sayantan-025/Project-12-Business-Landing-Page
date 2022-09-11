@@ -2,7 +2,7 @@
 
 ![Created By Sayantan Bera](https://img.shields.io/badge/Created%20By-Sayantan%20Bera-blue)
 
-## **Project-9** [Live Link](https://plant-landing-page-sayantan.netlify.app/)
+## **Project-12** [Live Link](https://business-landing-page-sayantan.netlify.app/)
 
 ### Website Image
 
@@ -16,4 +16,4 @@
 
 - I learned to create complex footer section.
 
-## This project took around 6 hours to complete.
+## This project took around 6 hours to complete and 4 hours to responsive.
