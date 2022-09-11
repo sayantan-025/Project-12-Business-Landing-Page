@@ -86,6 +86,12 @@ nav {
 .nav-item {
 	font-size: 2rem;
 	color: #fff;
+	transition: all 0.3s;
+}
+
+.nav-item:hover {
+	color: rgba(255, 255, 255, 0.834);
+	cursor: pointer;
 }
 
 .nav-item-active {
@@ -102,6 +108,7 @@ nav {
 .nav-item-active:hover {
 	background-color: #fff;
 	color: #636c79;
+	cursor: pointer;
 }
 
 /* ######## LOGO ######## */
@@ -194,6 +201,7 @@ form {
 	background-color: #fff;
 	border: none;
 	padding: 1rem 4rem;
+	cursor: pointer;
 }
 
 /* ####### Main Section ######## */
